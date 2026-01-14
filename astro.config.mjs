@@ -13,6 +13,5 @@ export default defineConfig({
   },
 
   integrations: [react(), sitemap()],
-  site: 'https://dexigagt.github.io-new',
-  base: '/dexigagt.github.io-new',
+  site: 'https://www.davidexiga.com',
 });
