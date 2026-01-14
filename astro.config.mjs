@@ -14,4 +14,5 @@ export default defineConfig({
 
   integrations: [react(), sitemap()],
   site: 'https://www.davidexiga.com',
+  base: '/'
 });
