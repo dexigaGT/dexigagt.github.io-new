@@ -1,0 +1,20 @@
+{
+    "name": "Node.js & Astro",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:1-20-bullseye",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "files.associations": {
+                    "*.astro": "astro"
+                }
+            },
+            "extensions": [
+                "astro-build.astro-vscode"
+            ]
+        }
+    },
+    "forwardPorts": [
+        4321
+    ],
+    "postCreateCommand": "npm install"
+}
