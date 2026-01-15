@@ -15,9 +15,5 @@ export default {
         },
     },
     plugins: [typography],
-    darkMode: 'class', // System-based with manual toggle requires 'class' strategy usually, or we can use the new v4 mechanism. 
-    // In v4, dark mode is often just `@media (prefers-color-scheme: dark)` by default, but for manual toggle we need 'selector' or 'class'.
-    // v4 uses `darkMode: 'selector'` by default if you want class-based? No, let's stick to standard 'class' for now or 'selector'.
-    // User requested: "Dark Mode: System-based with a manual toggle." 
-    // This usually means we check system pref, but allow override via class.
+    darkMode: 'class',
 };
