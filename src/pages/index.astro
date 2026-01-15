@@ -56,21 +56,8 @@ import { Github, Linkedin, Mail, GraduationCap, Download } from 'lucide-react';
             </div>
         </section>
 
-        {/* Grid Section: Interests & Education */}
+        {/* Grid Section: Education & Interests */}
         <section class="grid grid-cols-1 gap-8">
-           {/* Interests */}
-           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
-             <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900 dark:text-white">Interests</h3>
-             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-               {['Robotics & Embodied AI', 'Computer Vision', 'GPU Acceleration & HPC'].map(item => (
-                 <li class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
-                   <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
-                   {item}
-                 </li>
-               ))}
-             </ul>
-           </div>
-
            {/* Education */}
            <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
              <h3 class="text-xl font-bold mb-6 flex items-center gap-2 text-gray-900 dark:text-white">Education</h3>
@@ -92,6 +79,19 @@ import { Github, Linkedin, Mail, GraduationCap, Download } from 'lucide-react';
                   <p class="text-sm text-gray-400 mt-1">2018 - 2022</p>
                </div>
              </div>
+           </div>
+
+           {/* Interests */}
+           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+             <h3 class="text-xl font-bold mb-4 flex items-center gap-2 text-gray-900 dark:text-white">Interests</h3>
+             <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+               {['Robotics & Embodied AI', 'Computer Vision', 'GPU Acceleration & HPC'].map(item => (
+                 <li class="flex items-center gap-2 text-gray-600 dark:text-gray-300">
+                   <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                   {item}
+                 </li>
+               ))}
+             </ul>
            </div>
         </section>
       </div>
