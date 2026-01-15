@@ -3,7 +3,7 @@ title: "Optimizing CNNs and Vision Transformers with Generative Data Augmentatio
 date: 2025-12-10
 description: "A comparative study on improving Image Classification performance on CIFAR-10. This project implements ResNet-32 and Custom Vision Transformers (ViT) from scratch in PyTorch, utilizing Stable Diffusion (DiffuseMix) to generate synthetic training data and boost model accuracy by up to 8%."
 category: "Robotics"
-coverImage: "/diffusemix/diffusemix_model_small.png"
+coverImage: "/diffusemix/diffusemix_model.png"
 ---
 # Deep Learning Optimization with Generative AI
 **[Download the PDF here](/diffusemix/report.pdf)**
