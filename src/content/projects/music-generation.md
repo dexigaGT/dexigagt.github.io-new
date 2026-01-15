@@ -3,7 +3,7 @@ title: "Music Generation Using LSTM Neural Networks"
 date: 2024-05-07
 description: "An advanced pop music generation algorithm built with LSTM neural networks. A collaborative project focusing on improvements to baseline models and exploring parameter optimization for creative music synthesis."
 category: "Machine Learning"
-coverImage: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&auto=format&fit=crop&w=2400&q=80"
+coverImage: "/music-generation/midi.jpg"
 ---
 
 # Music Generation Using LSTM Neural Networks
@@ -109,8 +109,9 @@ Through systematic experimentation with various parameters and architectures, we
 
 Listen to generated music samples from our model:
 
-- **[Example 1](https://www.youtube.com/watch?v=JHCKurVwENA)**
-- **[Example 2](https://www.youtube.com/watch?v=X6YNEPHMIa4)**
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/JHCKurVwENA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-full-screen" allowfullscreen></iframe>
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/X6YNEPHMIa4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-full-screen" allowfullscreen></iframe>
 
 ## Conclusion
 
