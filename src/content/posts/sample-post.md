@@ -1,5 +1,5 @@
 ---
-title: "Building an Autonomous Drone with ROS 2"
+title: "Evaluating the Evolution of Deep Learning Techniques for Image Classification"
 date: 2023-11-15
 description: "A deep dive into building a quadcopter from scratch using Raspberry Pi, Pixhawk, and ROS 2 for autonomous navigation."
 category: "Robotics"
