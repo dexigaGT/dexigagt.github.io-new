@@ -7,8 +7,10 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
   <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
     {/* Header */}
     <div class="mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">Resume</h1>
-      <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">Software Engineer | Roboticist | ML Practitioner</p>
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">David Exiga</h1>
+      <div class="flex flex-col gap-2 text-gray-600 dark:text-gray-300 mb-6 text-sm">
+        <p>409-656-7728 | edavid9@gatech.edu | linkedin.com/in/david-exiga</p>
+      </div>
       
       <a href="/resume.pdf" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:opacity-90 transition-opacity font-medium">
         Download Resume
@@ -19,6 +21,67 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
     {/* Main Content */}
     <div class="space-y-12">
       
+      {/* Education */}
+      <section class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+          <Briefcase className="w-6 h-6 text-green-600" />
+          Education
+        </h2>
+        
+        <div class="space-y-4">
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-4">
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">M.S. Computer Science</h3>
+                <p class="text-gray-600 dark:text-gray-300">Georgia Institute of Technology</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Machine Learning Specialization</p>
+              </div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">Expected Dec 2026</span>
+            </div>
+            <div class="mt-4 pt-4 border-t border-gray-200 dark:border-zinc-700">
+              <p class="text-sm font-semibold text-gray-700 dark:text-gray-300 mb-3">Relevant Coursework</p>
+              <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm text-gray-600 dark:text-gray-300">
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  Artificial Intelligence for Robotics
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  Machine Learning
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  Deep Learning
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  Reinforcement Learning
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  GPU HW/SW
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-1.5 h-1.5 bg-green-500 rounded-full"></span>
+                  Graduate Intro to Operating Systems
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">B.S. Mechanical Engineering</h3>
+                <p class="text-gray-600 dark:text-gray-300">The University of Texas at Austin</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Robotics Concentration</p>
+              </div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">May 2022</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Experience */}
       <section class="space-y-6">
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
@@ -31,30 +94,38 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Software Engineer, AI & Robotics</h3>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">AI Engineer</h3>
                 <p class="text-gray-600 dark:text-gray-300">General Motors</p>
               </div>
               <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
                 <Calendar className="w-4 h-4" />
-                2022 - 2024
+                Jun 2022 – Aug 2025
               </div>
             </div>
             <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
               <MapPin className="w-4 h-4" />
-              <span class="text-sm">Warren, MI</span>
+              <span class="text-sm">Austin, TX</span>
             </div>
             <ul class="space-y-2 text-gray-600 dark:text-gray-300">
               <li class="flex gap-3">
                 <span class="text-green-600 font-bold">•</span>
-                <span>Developed and deployed robotics solutions using computer vision and machine learning to automate manufacturing processes</span>
+                <span>Improved 2D detection and 3D registration computer vision models by 50% through synthetic data generation</span>
               </li>
               <li class="flex gap-3">
                 <span class="text-green-600 font-bold">•</span>
-                <span>Implemented real-time object detection and pose estimation systems for assembly line automation</span>
+                <span>Enhanced defect inspection accuracy by 30% via 3D object registration testing and failure detection</span>
               </li>
               <li class="flex gap-3">
                 <span class="text-green-600 font-bold">•</span>
-                <span>Collaborated with cross-functional teams to optimize AI/ML pipelines for production environments</span>
+                <span>Reduced data pipeline latency from 5 minutes to 1 minute by developing scalable ROS2 microservices integrated with AWS cloud infrastructure</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Automated robotic inspection systems by integrating a ROS2 API to control a FANUC CRX-10iA/L collaborative robot for pneumatic actuation</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Engineered a cost-effective line-scan camera system for collecting steel beam data, enabling failure detection algorithms</span>
               </li>
             </ul>
           </div>
@@ -63,26 +134,74 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
               <div>
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mechanical Engineer Intern</h3>
-                <p class="text-gray-600 dark:text-gray-300">Tesla</p>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Hardware Engineering Intern</h3>
+                <p class="text-gray-600 dark:text-gray-300">Maidbot</p>
               </div>
               <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
                 <Calendar className="w-4 h-4" />
-                Summer 2021
+                Sep 2021 – Nov 2021
               </div>
             </div>
             <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
               <MapPin className="w-4 h-4" />
-              <span class="text-sm">Fremont, CA</span>
+              <span class="text-sm">Austin, TX</span>
             </div>
             <ul class="space-y-2 text-gray-600 dark:text-gray-300">
               <li class="flex gap-3">
                 <span class="text-green-600 font-bold">•</span>
-                <span>Designed and simulated mechanical components for production optimization</span>
+                <span>Developed a regression model to predict poor robotic performance using statistical and ML methods, reducing manual inspection time by 30%</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Job 3 */}
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mechanical Engineering Intern</h3>
+                <p class="text-gray-600 dark:text-gray-300">Texas Instruments</p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                <Calendar className="w-4 h-4" />
+                Jun 2021 – Aug 2021
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
+              <MapPin className="w-4 h-4" />
+              <span class="text-sm">Dallas, TX</span>
+            </div>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Designed high-precision opto-mechanical components for a 160W near-infrared laser used in industrial 3D resin printing, leading to 10x cost reduction</span>
               </li>
               <li class="flex gap-3">
                 <span class="text-green-600 font-bold">•</span>
-                <span>Conducted failure analysis and provided recommendations for manufacturing improvements</span>
+                <span>Applied materials science and finite element analysis to optimize heat dissipation, optical alignment, and structural reliability</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Job 4 */}
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Applications Engineering Intern</h3>
+                <p class="text-gray-600 dark:text-gray-300">Wilder Systems Robots</p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                <Calendar className="w-4 h-4" />
+                Jun 2020 – Jul 2020
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
+              <MapPin className="w-4 h-4" />
+              <span class="text-sm">Austin, TX</span>
+            </div>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Ensured sensor calibration accuracy and robotic safety by designing plastic and sheet metal components</span>
               </li>
             </ul>
           </div>
@@ -95,35 +214,23 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Languages</h3>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li>Python, C++, JavaScript/TypeScript</li>
-              <li>CUDA, SQL, PyTorch, TensorFlow</li>
-            </ul>
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Programming Languages</h3>
+            <p class="text-gray-600 dark:text-gray-300">Python, C, C++, SQL</p>
           </div>
           
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Domains</h3>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li>Computer Vision, Robotics, ML/AI</li>
-              <li>HPC, GPU Acceleration, ROS 2</li>
-            </ul>
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Machine Learning & Data Science</h3>
+            <p class="text-gray-600 dark:text-gray-300">PyTorch, Keras, Scikit-learn, LangChain, LangGraph</p>
           </div>
           
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Tools & Frameworks</h3>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li>Docker, Git, Astro, React</li>
-              <li>Kubernetes, Linux, AWS</li>
-            </ul>
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Robotics & Engineering</h3>
+            <p class="text-gray-600 dark:text-gray-300">ROS, ROS2, Open3D, OpenCV, FANUC, SolidWorks, ANSYS</p>
           </div>
           
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
-            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Specializations</h3>
-            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
-              <li>Computational Perception & Robotics</li>
-              <li>Embodied AI, Autonomous Systems</li>
-            </ul>
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Cloud & DevOps</h3>
+            <p class="text-gray-600 dark:text-gray-300">AWS, Azure, Docker, Kubernetes, Linux, Git</p>
           </div>
         </div>
       </section>
@@ -136,34 +243,28 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">M.S. in Computer Science</h3>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">M.S. Computer Science</h3>
                 <p class="text-gray-600 dark:text-gray-300">Georgia Institute of Technology</p>
-                <p class="text-sm text-gray-500 dark:text-gray-400">Specialization: Computational Perception & Robotics</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Machine Learning Specialization</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Coursework: Machine Learning, Reinforcement Learning, Deep Learning, GPU HW/SW, AI for Robotics</p>
               </div>
-              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2025 - Present</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">Expected Dec 2026</span>
             </div>
           </div>
           
           <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
             <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
               <div>
-                <h3 class="text-lg font-bold text-gray-900 dark:text-white">B.S. in Mechanical Engineering</h3>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">B.S. Mechanical Engineering</h3>
                 <p class="text-gray-600 dark:text-gray-300">The University of Texas at Austin</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">Robotics Concentration</p>
               </div>
-              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2018 - 2022</span>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">May 2022</span>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Download CTA */}
-      <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-8 rounded-2xl text-center">
-        <p class="text-gray-700 dark:text-gray-300 mb-4">Want the full details?</p>
-        <a href="/resume.pdf" class="inline-flex items-center gap-2 px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors font-medium">
-          Download Complete Resume
-          <Download className="w-4 h-4" />
-        </a>
-      </div>
     </div>
   </div>
 </Layout>
