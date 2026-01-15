@@ -40,8 +40,7 @@ export default function Navbar() {
                     {/* Desktop Menu */}
                     <div className="hidden md:flex items-center space-x-8">
                         <a href="/" className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400 font-medium transition-colors">Home</a>
-                        <a href="/#projects" className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400 font-medium transition-colors">Projects</a>
-                        <a href="/posts" className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400 font-medium transition-colors">Posts</a>
+                        <a href="/projects" className="text-gray-600 hover:text-green-600 dark:text-gray-300 dark:hover:text-green-400 font-medium transition-colors">Projects</a>
 
                         <button className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200">
                             <Search className="h-5 w-5" />
@@ -71,8 +70,7 @@ export default function Navbar() {
                 <div className="md:hidden bg-white dark:bg-black border-b border-gray-200 dark:border-gray-800">
                     <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                         <a href="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-900">Home</a>
-                        <a href="/#projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-900">Projects</a>
-                        <a href="/posts" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-900">Posts</a>
+                        <a href="/projects" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600 hover:bg-gray-50 dark:text-gray-200 dark:hover:bg-gray-900">Projects</a>
                     </div>
                 </div>
             )}

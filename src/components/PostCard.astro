@@ -2,7 +2,7 @@
 import type { CollectionEntry } from 'astro:content';
 
 interface Props {
-  post: CollectionEntry<'posts'>;
+  post: CollectionEntry<'projects'>;
 }
 
 const { post } = Astro.props;
@@ -16,7 +16,7 @@ const formattedDate = date.toLocaleDateString('en-US', {
 ---
 
 <article class="group bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 flex flex-col h-full">
-  <a href={`/posts/${post.slug}`} class="block aspect-video overflow-hidden bg-gray-100 dark:bg-zinc-800">
+  <a href={`/projects/${post.slug}`} class="block aspect-video overflow-hidden bg-gray-100 dark:bg-zinc-800">
     {coverImage ? (
       <img 
         src={coverImage} 
@@ -36,7 +36,7 @@ const formattedDate = date.toLocaleDateString('en-US', {
       </span>
     </div>
     <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
-      <a href={`/posts/${post.slug}`}>
+      <a href={`/projects/${post.slug}`}>
         {title}
       </a>
     </h3>

@@ -3,15 +3,15 @@ import Layout from '../../layouts/Layout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { getCollection } from 'astro:content';
 
-const posts = (await getCollection('posts')).sort(
+const posts = (await getCollection('projects')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
 ---
 
-<Layout title="Posts - David Exiga">
+<Layout title="Projects - David Exiga">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
     <div class="mb-12">
-      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Posts</h1>
+      <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">Projects</h1>
       <p class="text-xl text-gray-600 dark:text-gray-300 max-w-2xl">
         Thoughts on robotics, web development, and technology.
       </p>
