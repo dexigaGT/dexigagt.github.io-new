@@ -3,10 +3,12 @@ title: "Optimizing CNNs and Vision Transformers with Generative Data Augmentatio
 date: 2025-12-10
 description: "A comparative study on improving Image Classification performance on CIFAR-10. This project implements ResNet-32 and Custom Vision Transformers (ViT) from scratch in PyTorch, utilizing Stable Diffusion (DiffuseMix) to generate synthetic training data and boost model accuracy by up to 8%."
 category: "Robotics"
-coverImage: "/diffusemix/diffusemix_model_large.png"
+coverImage: "/diffusemix/diffusemix_model_small.png"
 ---
 # Deep Learning Optimization with Generative AI
-**[Download the full Evolution of Deep Learning Techniques paper](/diffusemix/report.pdf)**
+**[Download the PDF here](/diffusemix/report.pdf)**
+
+---
 
 **[View on GitHub](https://github.com/DALISA-2025/CS7643-final-project)**
 
@@ -37,7 +39,7 @@ For the ResNet-32 baseline, we conducted a systematic study comparing:
 
 To combat the data-hunger of Transformers, we implemented **DiffuseMix**. Instead of standard geometric augmentations, this pipeline blends original images with diffusion-generated variations and fractal patterns to enhance robustness.
 
-The mixing process combines the original image ($x_{orig}$), the diffusion variation ($x_{diff}$), and a fractal pattern ($x_{frac}$):
+The mixing process combines the original image (x_orig), the diffusion variation (x_diff), and a fractal pattern (x_frac):
 
 ```python
 import torch
