@@ -8,9 +8,10 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
     {/* Header */}
     <div class="mb-12">
       <h1 class="text-4xl font-bold mb-2">David Exiga</h1>
+      <hr class="border-t border-gray-300 my-4" />
       <p class="mb-6 text-sm">409-656-7728 | edavid9@gatech.edu | linkedin.com/in/david-exiga</p>
       
-      <a href="/resume.pdf" class="inline-flex items-center gap-2 px-6 py-3 font-medium">
+      <a href="/resume.pdf" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:opacity-90 transition-opacity font-medium">
         Download Resume
         <Download className="w-4 h-4" />
       </a>
@@ -25,12 +26,13 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
         {/* Work Experience */}
         <section>
           <h2 class="text-2xl font-bold mb-6">Work Experience</h2>
+          <hr class="border-t border-gray-300 my-4" />
         
         <div class="space-y-8">
           {/* Job 1 */}
           <div>
             <h3 class="text-xl font-bold">AI Engineer</h3>
-            <p class="font-semibold">General Motors</p>
+            <p class="font-semibold hover:text-green-600 transition-colors">General Motors</p>
             <p class="text-sm">Jun 2022 – Aug 2025 | Austin, TX</p>
             <ul class="space-y-2 mt-3 list-disc list-inside text-sm">
               <li>Improved 2D detection and 3D registration computer vision models by 50% through synthetic data generation</li>
@@ -44,7 +46,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           {/* Job 2 */}
           <div>
             <h3 class="text-xl font-bold">Hardware Engineering Intern</h3>
-            <p class="font-semibold">Maidbot</p>
+            <p class="font-semibold hover:text-green-600 transition-colors">Maidbot</p>
             <p class="text-sm">Sep 2021 – Nov 2021 | Austin, TX</p>
             <ul class="space-y-2 mt-3 list-disc list-inside text-sm">
               <li>Developed a regression model to predict poor robotic performance using statistical and ML methods, reducing manual inspection time by 30%</li>
@@ -54,7 +56,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           {/* Job 3 */}
           <div>
             <h3 class="text-xl font-bold">Mechanical Engineering Intern</h3>
-            <p class="font-semibold">Texas Instruments</p>
+            <p class="font-semibold hover:text-green-600 transition-colors">Texas Instruments</p>
             <p class="text-sm">Jun 2021 – Aug 2021 | Dallas, TX</p>
             <ul class="space-y-2 mt-3 list-disc list-inside text-sm">
               <li>Designed high-precision opto-mechanical components for a 160W near-infrared laser used in industrial 3D resin printing, leading to 10x cost reduction</li>
@@ -65,7 +67,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
           {/* Job 4 */}
           <div>
             <h3 class="text-xl font-bold">Applications Engineering Intern</h3>
-            <p class="font-semibold">Wilder Systems Robots</p>
+            <p class="font-semibold hover:text-green-600 transition-colors">Wilder Systems Robots</p>
             <p class="text-sm">Jun 2020 – Jul 2020 | Austin, TX</p>
             <ul class="space-y-2 mt-3 list-disc list-inside text-sm">
               <li>Ensured sensor calibration accuracy and robotic safety by designing plastic and sheet metal components</li>
@@ -77,18 +79,19 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
       {/* Education */}
       <section>
         <h2 class="text-2xl font-bold mb-6">Education</h2>
+        <hr class="border-t border-gray-300 my-4" />
         
         <div class="space-y-4">
           <div>
-            <h3 class="text-lg font-bold">M.S. Computer Science</h3>
-            <p class="font-semibold">Georgia Institute of Technology</p>
+            <h3 class="text-lg font-bold">Georgia Institute of Technology</h3>
+            <p class="font-semibold hover:text-green-600 transition-colors">M.S. Computer Science</p>
             <p class="text-sm">Expected Dec 2026 | Machine Learning Specialization</p>
             <p class="text-sm mt-2"><strong>Relevant Coursework:</strong> Artificial Intelligence for Robotics, Machine Learning, Deep Learning, Reinforcement Learning, GPU HW/SW, Graduate Intro to Operating Systems</p>
           </div>
           
           <div>
-            <h3 class="text-lg font-bold">B.S. Mechanical Engineering</h3>
-            <p class="font-semibold">The University of Texas at Austin</p>
+            <h3 class="text-lg font-bold">The University of Texas at Austin</h3>
+            <p class="font-semibold hover:text-green-600 transition-colors">B.S. Mechanical Engineering</p>
             <p class="text-sm">May 2022 | Robotics Concentration</p>
           </div>
         </div>
@@ -101,6 +104,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
         {/* Contact Info */}
         <section>
           <h2 class="text-2xl font-bold mb-6">Contact</h2>
+          <hr class="border-t border-gray-300 my-4" />
           <div class="space-y-3 text-sm">
             <p><strong>Phone:</strong> 409-656-7728</p>
             <p><strong>Email:</strong> edavid9@gatech.edu</p>
@@ -111,6 +115,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
         {/* Research Interests */}
         <section>
           <h2 class="text-2xl font-bold mb-6">Research Interests</h2>
+          <hr class="border-t border-gray-300 my-4" />
           <ul class="space-y-2 text-sm list-disc list-inside">
             <li>Computer Vision</li>
             <li>Robotics & Autonomous Systems</li>
@@ -122,6 +127,7 @@ import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
         {/* Technical Skills */}
         <section>
           <h2 class="text-2xl font-bold mb-6">Technical Skills</h2>
+          <hr class="border-t border-gray-300 my-4" />
           <div class="space-y-4 text-sm">
             <div>
               <h3 class="font-bold mb-2">Programming</h3>
