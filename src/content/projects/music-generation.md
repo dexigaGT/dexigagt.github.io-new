@@ -10,6 +10,7 @@ coverImage: "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=
 
 **By:** Austin Blanchard, David Exiga, Kris Killinger, Neil Narvekar, Dat Nguyen, and Sofia Valdez
 
+**[Read on Medium with Music Examples](https://david-exiga.medium.com/music-generation-using-lstm-neural-networks-44f6780a4c5)**
 
 ---
 
@@ -104,8 +105,13 @@ Through systematic experimentation with various parameters and architectures, we
 - **Dropout and regularization**: Preventing overfitting on the limited training data
 - **Learning rate and decay**: Optimizing convergence speed and stability
 
+## Audio Examples
+
+Listen to generated music samples from our model:
+
+- **[Example 1](https://www.youtube.com/watch?v=JHCKurVwENA)**
+- **[Example 2](https://www.youtube.com/watch?v=X6YNEPHMIa4)**
+
 ## Conclusion
 
 This project demonstrates the feasibility of generating creative pop music using LSTM neural networks. While challenging due to computational constraints, our work shows that with proper parameter tuning and sufficient training data, neural networks can produce diverse and musically coherent compositions.
-
-**[View and Generate Music](https://drive.google.com/drive/folders/1vs9P9L9-lOsrOifh_ptExL7DlCKOfThG?usp=sharing)** - Access our trained model outputs and generated compositions

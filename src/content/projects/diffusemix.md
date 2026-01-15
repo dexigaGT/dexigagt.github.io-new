@@ -6,11 +6,7 @@ category: "Robotics"
 coverImage: "/diffusemix/diffusemix_model.png"
 ---
 # Deep Learning Optimization with Generative AI
-**[Download the PDF here](/diffusemix/report.pdf)**
-
----
-
-**[View on GitHub](https://github.com/DALISA-2025/CS7643-final-project)**
+**[Download the PDF here](/diffusemix/report.pdf)** | **[View on GitHub](https://github.com/DALISA-2025/CS7643-final-project)**
 
 Synthetic data generation is becoming increasingly important in various industries, from manufacturing to robotics. In this post, I'll walk you through the process of boosting CNN and Vision Transformer performance using DiffuseMix and generative priors to double the training dataset.
 
