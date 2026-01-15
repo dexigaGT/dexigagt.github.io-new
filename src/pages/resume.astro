@@ -1,0 +1,169 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Download, Briefcase, Calendar, MapPin } from 'lucide-react';
+---
+
+<Layout title="David Exiga - Resume">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-20">
+    {/* Header */}
+    <div class="mb-12">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-2">Resume</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-6">Software Engineer | Roboticist | ML Practitioner</p>
+      
+      <a href="/resume.pdf" class="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-white text-white dark:text-black rounded-lg hover:opacity-90 transition-opacity font-medium">
+        Download Resume
+        <Download className="w-4 h-4" />
+      </a>
+    </div>
+
+    {/* Main Content */}
+    <div class="space-y-12">
+      
+      {/* Experience */}
+      <section class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2">
+          <Briefcase className="w-6 h-6 text-green-600" />
+          Experience
+        </h2>
+        
+        <div class="space-y-8">
+          {/* Job 1 */}
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Software Engineer, AI & Robotics</h3>
+                <p class="text-gray-600 dark:text-gray-300">General Motors</p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                <Calendar className="w-4 h-4" />
+                2022 - 2024
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
+              <MapPin className="w-4 h-4" />
+              <span class="text-sm">Warren, MI</span>
+            </div>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Developed and deployed robotics solutions using computer vision and machine learning to automate manufacturing processes</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Implemented real-time object detection and pose estimation systems for assembly line automation</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Collaborated with cross-functional teams to optimize AI/ML pipelines for production environments</span>
+              </li>
+            </ul>
+          </div>
+
+          {/* Job 2 */}
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2 mb-3">
+              <div>
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">Mechanical Engineer Intern</h3>
+                <p class="text-gray-600 dark:text-gray-300">Tesla</p>
+              </div>
+              <div class="flex items-center gap-2 text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">
+                <Calendar className="w-4 h-4" />
+                Summer 2021
+              </div>
+            </div>
+            <div class="flex items-center gap-2 text-gray-500 dark:text-gray-400 mb-4">
+              <MapPin className="w-4 h-4" />
+              <span class="text-sm">Fremont, CA</span>
+            </div>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Designed and simulated mechanical components for production optimization</span>
+              </li>
+              <li class="flex gap-3">
+                <span class="text-green-600 font-bold">•</span>
+                <span>Conducted failure analysis and provided recommendations for manufacturing improvements</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills */}
+      <section class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Technical Skills</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Languages</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Python, C++, JavaScript/TypeScript</li>
+              <li>CUDA, SQL, PyTorch, TensorFlow</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Domains</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Computer Vision, Robotics, ML/AI</li>
+              <li>HPC, GPU Acceleration, ROS 2</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Tools & Frameworks</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Docker, Git, Astro, React</li>
+              <li>Kubernetes, Linux, AWS</li>
+            </ul>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <h3 class="font-bold text-gray-900 dark:text-white mb-3">Specializations</h3>
+            <ul class="space-y-2 text-gray-600 dark:text-gray-300">
+              <li>Computational Perception & Robotics</li>
+              <li>Embodied AI, Autonomous Systems</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Education */}
+      <section class="space-y-6">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white">Education</h2>
+        
+        <div class="space-y-4">
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">M.S. in Computer Science</h3>
+                <p class="text-gray-600 dark:text-gray-300">Georgia Institute of Technology</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400">Specialization: Computational Perception & Robotics</p>
+              </div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2025 - Present</span>
+            </div>
+          </div>
+          
+          <div class="bg-gray-50 dark:bg-zinc-900/50 p-6 rounded-2xl border border-gray-100 dark:border-zinc-800">
+            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-2">
+              <div>
+                <h3 class="text-lg font-bold text-gray-900 dark:text-white">B.S. in Mechanical Engineering</h3>
+                <p class="text-gray-600 dark:text-gray-300">The University of Texas at Austin</p>
+              </div>
+              <span class="text-sm text-gray-500 dark:text-gray-400 whitespace-nowrap">2018 - 2022</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Download CTA */}
+      <div class="bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-8 rounded-2xl text-center">
+        <p class="text-gray-700 dark:text-gray-300 mb-4">Want the full details?</p>
+        <a href="/resume.pdf" class="inline-flex items-center gap-2 px-8 py-3 bg-green-600 hover:bg-green-700 text-white rounded-lg transition-colors font-medium">
+          Download Complete Resume
+          <Download className="w-4 h-4" />
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
