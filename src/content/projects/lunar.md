@@ -13,7 +13,7 @@ We trained a reinforcement learning agent to solve the continuous control varian
 
 <video src="/lunar/solution_learning_progression.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
 
-*The finished agent: three random drops, three clean landings on the pad.*
+*The finished agent iteratively learning to solve the enviornment*
 
 ## Environment Dynamics
 
@@ -47,10 +47,6 @@ Acts as the sole exploration mechanism since the TD3 policy remains deterministi
 <video controls src="/lunar/compare_exploration_noise.mp4" style="width: 100%; max-height: 50vh; object-fit: contain;"></video>
 
 ---
-## Final Agent
-<video src="/lunar/solution_learning_progression.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
-
-That progress shows up as a steady climb in its score over training, crossing the passing line of 200 partway through:
 
 <img src="/lunar/fig_A_training.png" style="width: 100%; max-height: 70vh; object-fit: contain;" alt="Training curve climbing past the solved line" />
 
