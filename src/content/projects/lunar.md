@@ -3,7 +3,7 @@ title: "Continuous Control of Lunar Lander Using Deep Reinforcement Learning (TD
 date: 2026-06-24
 description: "I built a reinforcement learning agent from scratch in PyTorch that learns to fly and land a rocket in a physics simulator."
 category: "Reinforcement Learning"
-coverImage: "/lunar/cover_landing.jpg"
+coverImage: "/lunar/cover_landing.png"
 ---
 # Teaching an Agent to Land a Rocket
 
