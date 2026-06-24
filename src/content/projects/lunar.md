@@ -11,7 +11,7 @@ coverImage: "/lunar/cover_landing.jpg"
 
 We trained a reinforcement learning agent to solve the continuous control variant of Lunar Lander-v3 from Gymnasium. In this post, I'll walk you through how our agent successfully solves the environment using Twin Delayed Deep Deterministic Policy Gradient (TD3).
 
-<video src="/lunar/demos/final_agent_landings.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
+<video src="/lunar/solution_learning_progression.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
 
 *The finished agent: three random drops, three clean landings on the pad.*
 
@@ -48,15 +48,15 @@ Acts as the sole exploration mechanism since the TD3 policy remains deterministi
 
 ---
 ## Final Agent
-<video src="/lunar/demos/solution_learning_progression.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
+<video src="/lunar/solution_learning_progression.mp4" autoplay loop muted playsinline style="width: 100%; max-height: 70vh; object-fit: contain;"></video>
 
 That progress shows up as a steady climb in its score over training, crossing the passing line of 200 partway through:
 
-<img src="/lunar/figures/fig_A_training.png" style="width: 100%; max-height: 70vh; object-fit: contain;" alt="Training curve climbing past the solved line" />
+<img src="/lunar/fig_A_training.png" style="width: 100%; max-height: 70vh; object-fit: contain;" alt="Training curve climbing past the solved line" />
 
 Tested on 100 fresh landings with the learning turned off, the finished agent averaged **241** — comfortably above passing. The occasional low score isn't a mistake by the agent; the simulator gives every drop a random shove, and once in a while it's simply unrecoverable. That's exactly why the bar is an *average* over 100 tries rather than a single perfect run.
 
-<img src="/lunar/figures/fig_B_eval.png" style="width: 100%; max-height: 70vh; object-fit: contain;" alt="100-episode evaluation, mostly above the passing line" />
+<img src="/lunar/fig_B_eval.png" style="width: 100%; max-height: 70vh; object-fit: contain;" alt="100-episode evaluation, mostly above the passing line" />
 
 
 ---
